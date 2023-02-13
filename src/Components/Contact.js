@@ -1,8 +1,14 @@
 import React from 'react'
+import {motion} from 'framer-motion/dist/framer-motion'
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center mt-16">
+    <motion.div className="flex flex-col items-center mt-16"
+    
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
       <h2 className="text-2xl font-bold md:text-6xl">Get in touch</h2>
       <div className="flex mt-6">
         <a
@@ -34,6 +40,6 @@ export default function Contact() {
           <i className="fab fa-github text-3xl sm:text-6xl lg:text-9xl"></i>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

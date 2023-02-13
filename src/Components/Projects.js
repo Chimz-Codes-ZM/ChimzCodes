@@ -1,8 +1,14 @@
 import React from 'react'
 
+import {motion} from "framer-motion/dist/framer-motion"
+
 export default function Projects() {
   return (
-    <>
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
       <section id="projects" class="scroll-smooth">
         <div class="wrapper">
           <div class="container scrollx flex flex-col    ">
@@ -69,6 +75,6 @@ export default function Projects() {
       </section>
 
 
-    </>
+    </motion.div>
   )
 }

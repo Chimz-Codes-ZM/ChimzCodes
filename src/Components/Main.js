@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 
+import {motion} from "framer-motion/dist/framer-motion"
+
 const content = [
   'Software Engineer',
   'Software Developer',
@@ -20,7 +22,12 @@ export default function Main() {
     };
   }, []);
   return (
-    <div>
+    <motion.div
+    
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
       <section
         class="
           w-full
@@ -80,6 +87,6 @@ export default function Main() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }

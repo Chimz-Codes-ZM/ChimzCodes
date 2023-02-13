@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import {motion} from 'framer-motion/dist/framer-motion'
 
 export default function Skills() {
   return (
-    <>
+    <motion.div
+    
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    >
        <section
         id="skill-section"
         className="flex flex-col justify-center items-center border p-10"
@@ -168,6 +175,6 @@ export default function Skills() {
         </div>
         <div></div>
       </section>
-    </>
+    </motion.div>
   )
 }
