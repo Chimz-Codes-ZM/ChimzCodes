@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 
-import {motion} from "framer-motion/dist/framer-motion"
+import {motion} from "framer-motion"
 
 const content = [
   'Software Engineer',
