@@ -1,16 +1,23 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom'
+import { useLocation, NavLink } from 'react-router-dom'
 
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+  const isHomepage = location.pathname === '/';
 
   return (
     <div>
       <nav
         className="sm:border-b px-4 py-2 flex fixed z-10 sm:w-full top-0"
         id="nav1"
+        style={{
+          background: 'rgba(0, 0, 0, 0.8)',
+          backdropFilter: 'blur(8px)',
+          WebkitBackdropFilter: 'blur(8px)',
+        }}
       >
         <button
           id="toggle-menu"
@@ -28,19 +35,19 @@ export default function Navbar() {
 
         <div className="hidden sm:flex mr-auto space-x-2">
           <NavLink exact activeClassName="active" to="/">
-            <span className="hover:shadow transition duration-500 px-2">
+            <span className="hover:shadow transition duration-500 px-2" className={!isHomepage ? 'text-white' : 'text-black'}> 
               About Me
             </span>
             |
           </NavLink>
           <NavLink exact activeClassName="active" to="/projects">
-            <span className="hover:shadow transition duration-500 px-2">
+            <span className="hover:shadow transition duration-500 px-2 text-white">
               Projects
             </span>
             |
           </NavLink>
           <NavLink exact activeClassName="active" to="/skills">
-            <span className="hover:shadow transition duration-500 px-2">
+            <span className="hover:shadow transition duration-500 px-2 text-white">
               Skills
             </span>
             |
