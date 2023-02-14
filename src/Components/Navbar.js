@@ -35,7 +35,7 @@ export default function Navbar() {
 
         <div className="hidden sm:flex mr-auto space-x-2">
           <NavLink exact activeClassName="active" to="/">
-            <span className="hover:shadow transition duration-500 px-2 text-white"> 
+            <span className="hover:shadow transition duration-500 px-2 text-white "> 
               About Me
             </span>
             |
