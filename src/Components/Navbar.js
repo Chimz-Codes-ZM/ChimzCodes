@@ -1,12 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import { useLocation, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const location = useLocation();
-  const isHomepage = location.pathname === '/';
 
   return (
     <div>
