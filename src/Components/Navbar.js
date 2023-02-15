@@ -1,12 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import { useLocation, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const location = useLocation();
-  const isHomepage = location.pathname === '/';
 
   return (
     <div>
@@ -35,7 +33,7 @@ export default function Navbar() {
 
         <div className="hidden sm:flex mr-auto space-x-2">
           <NavLink exact activeClassName="active" to="/">
-            <span className="hover:shadow transition duration-500 px-2" className={!isHomepage ? 'text-white' : 'text-black'}> 
+            <span className="hover:shadow transition duration-500 px-2 text-white "> 
               About Me
             </span>
             |
@@ -79,19 +77,17 @@ export default function Navbar() {
           showMenu ? '' : 'hidden'
         }`}
         style={{
-          background: 'rgba(255, 255, 255, 0.35)',
+          background: 'rgba(0, 0, 0, 0.8)',
           backdropFilter: 'blur(8px)',
           WebkitBackdropFilter: 'blur(8px)',
-          borderRadius: '10px',
-          border: '1px solid rgba(255, 255, 255, 0.18)',
-          transform: `${showMenu ? 'scale(1)' : 'scale(0.5)'}`,
-          opacity: `${showMenu ? '1' : '0'}`,
         }}
       >
         <NavLink exact activeClassName="active" to="/"
 
           className="
-hover:shadow transition duration-500 rounded border-b-2 border-black
+          hover:bg-black
+          hover:text-white
+          py-2 transition duration-500 rounded border-b-2 border-black
 "
         >
           About Me
@@ -99,7 +95,9 @@ hover:shadow transition duration-500 rounded border-b-2 border-black
         <NavLink exact activeClassName="active" to="/projects"
 
           className="
-hover:shadow transition duration-500 rounded border-b-2 border-black
+          hover:bg-black
+          hover:text-white
+          py-2 transition duration-500 rounded border-b-2 border-black
 "
         >
           Projects
@@ -107,7 +105,9 @@ hover:shadow transition duration-500 rounded border-b-2 border-black
         <NavLink exact activeClassName="active" to="/skills"
 
           className="
-hover:shadow transition duration-500 rounded border-b-2 border-black
+          hover:bg-black
+          hover:text-white
+          py-2 transition duration-500 rounded border-b-2 border-black
 "
         >
           Skills
@@ -116,7 +116,9 @@ hover:shadow transition duration-500 rounded border-b-2 border-black
         <NavLink exact activeClassName="active" to="/contact"
 
           className="
-hover:shadow transition duration-500 rounded 
+          hover:bg-black
+          hover:text-white
+          py-2 transition duration-500 rounded 
 "
         >
           Contact Me
