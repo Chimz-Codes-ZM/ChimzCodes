@@ -21,8 +21,8 @@ export default function Projects() {
                   href="https://react-router-auth-15c38.web.app/"
                   target="_blank"
                   ><img
-                    src="https://stackblitz.com/files/tailwindcss-y9boc3/github/Chimz-Codes-ZM/portfolio022023/gsap_scrolling/Components/undraw_Team_up_re_84ok.png"
-                    alt="calculator"
+                    src="./Components/Images/not_found.png"
+                    alt="Random user"
                     class=""
                     
                 /></a>
