@@ -21,7 +21,7 @@ export default function Projects() {
                   href="https://react-router-auth-15c38.web.app/"
                   target="_blank"
                   ><img
-                    src="./Components/Images/not_found.png"
+                    src="https://lh3.googleusercontent.com/S7fQrYCY_wx7pu_YHQY3cTLN0UUyi3f_vEeD9fGMObVvgZ7ehhbbqZVfLgJwBFH4b-Q2no1XfHDJjkWiadoSw7zTeysGgRArZNrpZTN8qE5UUv3l7rrM0-fqUluJUYiZqGg2B8Uc3_bDi3nCw0pOjthz0YuXbK0iZ6J_XuyzugM4yC6KaSOJ2lsvUh6xh5VC2kzelAfL-acOqgZNOYlaGA2WC31eKsW6ZCFEQEwn1TrIJpp5j675WcZnd4kDqFstESzE8bFIwgY7REValOhUFQfnnEGpWj648hKGFc1lz59BFnLsnivLjoRHL_Ah-kUwqDW0UwcwHlMmF4zdaJ0DsnDol3_JKGvM-HpUFTJKOJh1tQIgxy7pPgUwG4gfGmkS4mqYtYZpJeX0HY8EJLPVLKafP4Z57NFz9XYkNvnboZDG_KieZYfft_gQcNACq02G2AJgl_LZzrZGRd_oOxupTJmAb5tvgXSEBYlpQZI51GcXKilH7ykdCRvUuWf1eLXlyX-OIRdN9NofoPa0Yqybr4osIiT22UbYD-lfNYo_v3T5HNgNEuV0BZOxj-YM7lGMuZtuD3ILzYQ9sQ8EaHX6kkyJuP8qA_4yC-1GrXjA5IMlDShDsMXIJZc9PXP43Bgv8Na2deWBhkNTquXb-pLfIGG8rbaMfrD-zQ7kydrJBnx4y1HDqKLCN3stASwq85aT1XFCKBOfJunOGVCf4mAVaOCayernPrijYp5dg_0VgG1QJpBpcxrdoM9PUakqls--Zp0uC_3nxR87RtLW7eZ9L2yxhJDpLVnGwUIUbDmTCcCQLmefXyBcKHuNYXd6Iv-cWDTBPFz4sbYgOubgQSbtNwpz4Scw3FDPZDMCtZNs04hukERrOooI3sPcA7Eeulqmm3udqgLWB2Cli5yKP7uS_iFeQq3ZjHOxP9IYRnwsk-Go1A=w896-h619-no?authuser=0"
                     alt="Random user"
                     class=""
                     
